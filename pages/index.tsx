@@ -1,5 +1,8 @@
 import Head from "next/head";
 
+import Header from "../components/layout/Header";
+import Profile from "../components/layout/Profile";
+
 export default function Home() {
   return (
     <div>
@@ -9,8 +12,10 @@ export default function Home() {
         <link rel="icon" href="favi.ico" />
       </Head>
       {/* Header */}
-
-      {/* Profile */}
+      <Header />
+      <section id="profile">
+        <Profile />
+      </section>
 
       {/* About */}
 
