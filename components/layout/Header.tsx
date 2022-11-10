@@ -8,10 +8,25 @@ import {
 import { GoMail } from "react-icons/go";
 
 import { motion } from "framer-motion";
+import { useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
 
 const Header = ({}: Props) => {
+  const [title] = useTypewriter({
+    words: ["<adibrisan />"],
+    loop: true,
+    delaySpeed: 5000,
+    typeSpeed: 100,
+  });
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="flex items-start justify-between sticky p-5 top-0 max-w-7xl mx-auto xl:items-center z-30">
       <motion.div
@@ -28,9 +43,29 @@ const Header = ({}: Props) => {
         transition={{ duration: 1 }}
         className="flex flex-row items-center content-center"
       >
-        <TiSocialFacebook color="gray" size={30} />
-        <TiSocialLinkedin color="gray" size={30} />
-        <TiSocialGithub color="gray" size={30} />
+        <span
+          className="absolute -left-60 cursor-pointer hidden xl:inline-flex"
+          onClick={scrollUp}
+        >
+          {title}
+        </span>
+        <a
+          className="pr-5"
+          href="https://www.facebook.com/adi.brisan.9"
+          target="_"
+        >
+          <TiSocialFacebook cursor="pointer" color="gray" size={30} />
+        </a>
+        <a
+          className="pr-5"
+          href="https://www.linkedin.com/in/adi-bri%C8%99an-96b8801a9/"
+          target="_"
+        >
+          <TiSocialLinkedin cursor="pointer" color="gray" size={30} />
+        </a>
+        <a href="https://github.com/adibrisan" target="_">
+          <TiSocialGithub cursor="pointer" color="gray" size={30} />
+        </a>
       </motion.div>
       <motion.div
         initial={{
@@ -47,7 +82,7 @@ const Header = ({}: Props) => {
         className="flex items-center text-gray-300 cursor-pointer"
       >
         <GoMail color="gray" size={30} />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <p className="ml-10 uppercase hidden md:inline-flex text-sm text-gray-400">
           Get in Touch
         </p>
       </motion.div>
