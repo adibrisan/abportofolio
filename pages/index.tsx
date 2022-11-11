@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import About from "../components/layout/About";
 import Header from "../components/layout/Header";
 import Profile from "../components/layout/Profile";
 
@@ -18,6 +19,9 @@ export default function Home() {
       </section>
 
       {/* About */}
+      <section className="snap-center" id="about">
+        <About />
+      </section>
 
       {/* Experience */}
 
