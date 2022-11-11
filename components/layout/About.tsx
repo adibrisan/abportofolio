@@ -4,8 +4,13 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="relative px-10 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row mx-auto">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-sm md:text-2xl  text-cyan-200">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+      className="relative px-10 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row mx-auto"
+    >
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-sm md:text-2xl text-cyan-200">
         About
       </h3>
       <motion.img
@@ -37,7 +42,7 @@ const About = (props: Props) => {
           omnis neque doloribus maxime.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

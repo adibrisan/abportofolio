@@ -1,6 +1,8 @@
 import Head from "next/head";
+import React from "react";
 
 import About from "../components/layout/About";
+import Experience from "../components/layout/Experience";
 import Header from "../components/layout/Header";
 import Profile from "../components/layout/Profile";
 
@@ -24,6 +26,9 @@ export default function Home() {
       </section>
 
       {/* Experience */}
+      <section className="snap-center" id="experience">
+        <Experience />
+      </section>
 
       {/* Skills */}
 
