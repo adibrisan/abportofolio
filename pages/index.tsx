@@ -4,6 +4,7 @@ import React from "react";
 import About from "../components/layout/About";
 import Experience from "../components/layout/Experience";
 import Header from "../components/layout/Header";
+import Skills from "../components/layout/Skills";
 import Profile from "../components/layout/Profile";
 
 export default function Home() {
@@ -31,6 +32,9 @@ export default function Home() {
       </section>
 
       {/* Skills */}
+      <section className="snap-start" id="skills">
+        <Skills />
+      </section>
 
       {/* Projects */}
 

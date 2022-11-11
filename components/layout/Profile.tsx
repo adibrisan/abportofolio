@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "../core/Link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import ProfileComponent from "../custom/ProfileComponent";
