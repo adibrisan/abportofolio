@@ -10,7 +10,7 @@ type Props = {
 
 const ExpCard = ({ title, company, date, summary, srcArr }: Props) => {
   return (
-    <article className="p-10 w-[270px] md:w-[600px] xl:w-[900px] flex flex-col flex-shrink-0 rounded-lg items-center space-y-7 bg-gray-900 snap-center hover:opacity-70 cursor-pointer transition-opacity duration-150 overflow-hidden">
+    <article className="p-10 w-[270px] md:w-[600px] xl:w-[900px] flex flex-col flex-shrink-0 rounded-lg items-center space-y-7 bg-gray-900 snap-center hover:bg-opacity-70 cursor-pointer transition-opacity duration-150 overflow-hidden">
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">{title}</h4>
         <p className="font-bold text-2xl mt-1">{company}</p>

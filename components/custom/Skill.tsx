@@ -16,7 +16,7 @@ const Skill = ({ directionLeft }: Props) => {
           duration: 1,
         }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="rounded-full border border-cyan-200 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-400 ease-in-out"
+        className="rounded-full border border-grey-200 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-400 ease-in-out"
         src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
         alt="skill"
       />
