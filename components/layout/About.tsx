@@ -8,13 +8,13 @@ const About = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className="relative px-10 smm:p-2 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center mdm:text-left lgl:flex-row mx-auto"
+      className="relative px-10 smm:p-2 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row mx-auto"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-sm sm:text-2xl text-cyan-200">
         About
       </h3>
       <motion.img
-        className="-mb-0 xlm:mb-20 flex-shrink-0 w-56 h-56 smm:w-[200px] smm:h-[200px] smm:rounded-full object-cover sm:w-[500px] sm:h-[300px] 3xlm:rounded-lg 3xlm:w-64 3xlm:h-96"
+        className="-mb-0 xlm:mb-20 mt-8 flex-shrink-0 w-56 h-56 smm:w-[100px] smm:h-[100px] smm:mt-20 smm:rounded-full object-cover md:w-[500px] md:h-[300px] sm:rounded-lg"
         initial={{
           x: -200,
           opacity: 0,

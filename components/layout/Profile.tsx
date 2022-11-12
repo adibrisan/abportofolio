@@ -29,7 +29,7 @@ const Profile = (props: Props) => {
         loading="lazy"
       />
       <div className="z-20">
-        <h2 className="text-sm tracking-[18px] text-cyan-200 uppercase pb-5">
+        <h2 className="text-sm xl:text-lg tracking-[18px] text-cyan-200 uppercase pb-5">
           Frontend Engineer
         </h2>
         <h1 className="text-lg lg:text-4xl font-semibold">
