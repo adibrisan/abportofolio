@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1f2937 #607eaa;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #607eaa;
+  border-radius: 14px;
+  border: 3px solid #1f2937;
+}
+
 @layer components {
   .button {
     @apply px-10 py-2 border border-transparent rounded-2xl uppercase text-sm tracking-wide text-white transition-all hover:border-[#66BFBF]/50 hover:text-[#66BFBF]/40 cursor-pointer;
