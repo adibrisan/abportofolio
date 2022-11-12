@@ -15,10 +15,10 @@ const Skills = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-sm md:text-2xl text-cyan-200">
         skills
       </h3>
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm xlm:hidden">
         Hover over a skill to see level percentage
       </h3>
-      <div className="grid sm:grid-cols-4 sm:gap-5 grid-cols-2 gap-2">
+      <div className="grid smm:grid-cols-3 sm:gap-5 grid-cols-4 gap-2 sm:mt-[200px]">
         <Skill directionLeft />
         <Skill />
         <Skill directionLeft />
