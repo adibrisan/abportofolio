@@ -4,6 +4,7 @@ import React, { useCallback } from "react";
 interface Flink extends LinkProps {
   target?: React.HTMLAttributeAnchorTarget | string;
   children: React.ReactNode;
+  className?: string;
 }
 
 const Link = ({
@@ -17,6 +18,7 @@ const Link = ({
   prefetch,
   locale,
   target,
+  className,
   ...anchorProps
 }: Flink) => {
   const handleClick = useCallback(
