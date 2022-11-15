@@ -2,10 +2,13 @@ import Head from "next/head";
 import React from "react";
 
 import About from "../components/layout/About";
+import Contact from "../components/layout/Contact";
 import Experience from "../components/layout/Experience";
+import FindMe from "../components/layout/FindMe";
 import Header from "../components/layout/Header";
 import Skills from "../components/layout/Skills";
 import Profile from "../components/layout/Profile";
+import Projects from "../components/layout/Projects";
 
 export default function Home() {
   return (
@@ -37,8 +40,19 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      <section className="snap-start" id="projects">
+        <Projects />
+      </section>
+
+      {/*TODO: FIND ME GITHUB ANIMATION*/}
+      <section className="snap-start" id="findme">
+        <FindMe />
+      </section>
 
       {/* Contact Me */}
+      <section className="snap-start" id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

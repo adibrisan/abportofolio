@@ -49,6 +49,12 @@ const Profile = (props: Props) => {
           <Link href="#projects">
             <button className="button">Projects</button>
           </Link>
+          <Link href="#findme">
+            <button className="button">Github projects</button>
+          </Link>
+          <Link href="#contact">
+            <button className="button">Contact me</button>
+          </Link>
         </div>
       </div>
     </div>

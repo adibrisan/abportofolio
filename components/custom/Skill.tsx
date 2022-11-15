@@ -22,7 +22,9 @@ const Skill = ({ directionLeft }: Props) => {
       />
       <div className="absolute h-24 w-24 lgm:h-16 lgm:w-16 opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:w-28 md:h-28 xl:w-[80px] xl:h-[80px] rounded-full z-0">
         <div className="h-full flex justify-center items-center">
-          <p className="text-xl font-bold text-black opacity-100">100%</p>
+          <p className="text-sm font-bold text-black opacity-100">
+            100%<span className="block">JavaScript</span>
+          </p>
         </div>
       </div>
     </div>

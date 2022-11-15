@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
   images: {
-    domains: ["cdn-icons-png.flaticon.com", "miro.medium.com"],
+    domains: [
+      "cdn-icons-png.flaticon.com",
+      "miro.medium.com",
+      "thumbs.dreamstime.com",
+    ],
   },
 };
 

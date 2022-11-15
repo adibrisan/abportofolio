@@ -22,6 +22,84 @@
   border: 3px solid #1f2937;
 }
 
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.githubChart {
+  width: 820px;
+  text-align: center;
+}
+.githubContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dates {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 1.5s all ease;
+}
+
+.active:nth-child(4n) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n + 1) {
+  background-color: #195b2c;
+}
+.githubChart:hover .active:nth-child(2n) {
+  background-color: #063f24;
+}
+
+.githubSm {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    height: max-content;
+  }
+  .project:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .phone,
+  .laptop {
+    transform: none !important;
+  }
+
+  .githubChart {
+    display: none;
+  }
+
+  .githubTitle {
+    text-align: center;
+    font-size: 10vw;
+  }
+}
+
 @layer components {
   .button {
     @apply px-10 py-2 border border-transparent rounded-2xl uppercase text-sm tracking-wide text-white transition-all hover:border-[#66BFBF]/50 hover:text-[#66BFBF]/40 cursor-pointer;
