@@ -4,14 +4,19 @@ import {
   TiSocialLinkedin,
   TiSocialGithub,
 } from "react-icons/ti";
-import { GoMail } from "react-icons/go";
-
+import { VscFilePdf } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
+import useDownloader from "react-use-downloader";
 
 type Props = {};
 
 const Header = ({}: Props) => {
+  const { download } = useDownloader();
+
+  const fileUrl = "/cv/Adrian-Alexandru_Brisan_Resume.pdf";
+  const fileName = "Adrian-Alexandru_Brisan_Resume.pdf";
+
   const [title] = useTypewriter({
     words: ["<adibrisan />"],
     loop: true,
@@ -80,10 +85,11 @@ const Header = ({}: Props) => {
         }}
         transition={{ duration: 1 }}
         className="flex items-center text-gray-300 cursor-pointer"
+        onClick={() => download(fileUrl, fileName)}
       >
-        <GoMail color="gray" size={30} />
+        <VscFilePdf color="gray" size={30} />
         <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get in Touch
+          Download my CV
         </p>
       </motion.div>
     </header>

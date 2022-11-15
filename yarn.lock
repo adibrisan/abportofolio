@@ -3706,6 +3706,11 @@ react-simple-typewriter@^4.0.5:
   resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-4.0.5.tgz#404a1e12ccb97ad7813b48f8e58813117fe8e3fb"
   integrity sha512-2CmVpD1kTifRE8gixr2z+1aYS136ZbAC/UATNzvkzl4tSiThT/ATXH4rOGVwWLTlOWCVnSewObXo/kJlV2HMxw==
 
+react-use-downloader@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-use-downloader/-/react-use-downloader-1.2.0.tgz#56522b7989cdbd94dbbaacad3b3bd8b8372ee498"
+  integrity sha512-8mZvAb67P06vRF7PMwViIWRwByiADImyitTMrBVYdjm5t97JSDXRWyX3d0BY1WaQR9n5XRUTF1T1OvX71ZrJ8w==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
