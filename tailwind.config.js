@@ -21,6 +21,8 @@ module.exports = {
       // => @media (max-width: 767px)
       smm: { max: "640px" },
       // => @media (max-width: 639px)
+      xsm: { max: "350px" },
+      // => @media (max-width: 350px)
       lgl: "1024px",
       // => @media (min-width: 1024px)
       sm: "640px",

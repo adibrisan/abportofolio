@@ -84,13 +84,16 @@ const Header = ({}: Props) => {
           scale: 1,
         }}
         transition={{ duration: 1 }}
-        className="flex items-center text-gray-300 cursor-pointer"
+        className="flex items-center text-gray-300 cursor-pointer mdm:flex-col"
         onClick={() => download(fileUrl, fileName)}
       >
-        <VscFilePdf color="gray" size={30} />
+        <VscFilePdf color="white" size={30} />
         <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
           Download my CV
         </p>
+        <span className="mt-1 uppercase text-sm text-gray-400 md:hidden">
+          CV
+        </span>
       </motion.div>
     </header>
   );

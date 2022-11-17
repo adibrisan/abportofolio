@@ -55,7 +55,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
           />
         </>
       ) : (
-        <div className="relative self-center mr-[200px] mt-[150px]">
+        <div className="relative mr-[200px]">
           <div
             style={{
               width: "100%",
@@ -63,41 +63,61 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
               left: "61.5%",
               top: "34.7%",
               transform: `translate(-50%,-50%)`,
-              zIndex: 100,
             }}
             className="absolute"
           >
-            <Image
-              src="/img/pizza-project.png"
-              alt="pizza_project"
-              width={502}
-              height={500}
-            />
+            <Link href={link ? link : ""} target="_">
+              <Image
+                src="/img/pizza-project.png"
+                alt="pizza_project"
+                width={502}
+                height={500}
+              />
+            </Link>
           </div>
-          <Link href={link ? link : ""} target="_">
-            <Image
-              src="/img/projects-laptop.png"
-              alt="project"
-              width={670}
-              height={15}
-            />
-          </Link>
+          <div className="xlm:opacity-0">
+            <Link href={link ? link : ""} target="_">
+              <Image
+                src="/img/projects-laptop.png"
+                alt="project"
+                width={670}
+                height={15}
+              />
+            </Link>
+          </div>
         </div>
       )}
-      <div className="space-y-0 px-0 md:px-10 max-w-6xl lg:space-y-10">
-        <h4 className="mt-[500px] mdm:mt-[600px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
-          <span className="underline decoration-cyan-200/70">
-            Project {index + 1}
-          </span>
-          :&ensp;React Native app - Econominator
-        </h4>
-        <p className="text-sm xl:text-lg text-center smm:hidden">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-          excepturi explicabo consectetur eaque consequuntur amet minus corrupti
-          quibusdam, et deserunt quia quasi suscipit, laudantium alias illo! Hic
-          reprehenderit fuga quas!
-        </p>
-      </div>
+      {isVideo ? (
+        <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5">
+          <h4 className="mt-[500px] mdm:mt-[600px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+            <span className="underline decoration-cyan-200/70">
+              Project {index + 1}
+            </span>
+            :&ensp;React Native app - Econominator
+          </h4>
+          <p className="text-sm xl:text-lg text-center smm:hidden">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+            excepturi explicabo consectetur eaque consequuntur amet minus
+            corrupti quibusdam, et deserunt quia quasi suscipit, laudantium
+            alias illo! Hic reprehenderit fuga quas!
+          </p>
+        </div>
+      ) : (
+        <div className="px-0 md:px-1 max-w-6xl mr-[200px]">
+          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+            <span className="underline decoration-cyan-200/70">
+              Project {index + 1}
+            </span>
+            :&ensp;React Native app - Econominator
+          </h4>
+          <p className="text-sm xl:text-lg text-center smm:hidden">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+            excepturi explicabo consectetur eaque consequuntur amet minus
+            corrupti quibusdam, et deserunt quia quasi suscipit, laudantium
+            alias illo! Hic reprehenderit fuga quas!
+          </p>
+        </div>
+      )}
     </motion.div>
   );
 };
