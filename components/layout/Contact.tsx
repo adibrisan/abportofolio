@@ -25,10 +25,10 @@ const Contact = (props: Props) => {
       <section className="text-gray-700 body-font relative">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-cyan-200">
+            <h1 className="lg:text-3xl text-md font-medium title-font mb-4 text-cyan-200">
               Contact Me
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-cyan-200">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm text-cyan-200">
               Let&apos;s create something great&ensp;!
             </p>
           </div>
@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
                   <div className="relative">
                     <label
                       htmlFor="name"
-                      className="leading-7 text-sm text-cyan-200"
+                      className="leading-7 text-sm smm:text-xs text-cyan-200"
                     >
                       Name
                     </label>
@@ -57,7 +57,7 @@ const Contact = (props: Props) => {
                   <div className="relative">
                     <label
                       htmlFor="email"
-                      className="leading-7 text-sm text-cyan-200"
+                      className="leading-7 text-sm smm:text-xs text-cyan-200"
                     >
                       Email
                     </label>
@@ -76,7 +76,7 @@ const Contact = (props: Props) => {
                 <div className="relative">
                   <label
                     htmlFor="message"
-                    className="leading-7 text-sm text-cyan-200"
+                    className="leading-7 text-sm smm:text-xs text-cyan-200"
                   >
                     Message
                   </label>

@@ -87,7 +87,7 @@ const Header = ({}: Props) => {
         className="flex items-center text-gray-300 cursor-pointer mdm:flex-col"
         onClick={() => download(fileUrl, fileName)}
       >
-        <VscFilePdf color="white" size={30} />
+        <VscFilePdf color="gray" size={30} />
         <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
           Download my CV
         </p>
