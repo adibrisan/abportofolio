@@ -42,7 +42,7 @@ const FindMe = (props: Props) => {
       transition={{ duration: 2.5 }}
       className="relative px-10 smm:p-2 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row mx-auto"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-sm sm:text-2xl text-cyan-200">
+      <h3 className="absolute top-24 uppercase tracking-[20px] smm:tracking-[1px] text-sm sm:text-2xl text-cyan-200">
         Find me on github
       </h3>
       <div className="githubContainer">
