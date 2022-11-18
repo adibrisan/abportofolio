@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 import Link from "../core/Link";
+
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 interface Props {
   index: number;
@@ -23,35 +27,25 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
     >
       {isVideo ? (
         <>
-          <video
-            src="/videos/demo-license.mp4"
-            autoPlay
+          <ReactPlayer
             loop
-            style={{
-              position: "absolute",
-              left: "50.4%",
-              top: "44.8%",
-              transform: `translate(-50%,-50%)`,
-              width: "300px",
-              height: "479px",
-              borderEndStartRadius: "24%",
-              zIndex: 0,
-            }}
-          >
-            <source src="/videos/demo-license.mp4" type="video/mp4" />
-          </video>
+            playing
+            muted
+            controls
+            url="/videos/demo_license.mp4"
+          />
           <Image
             style={{
               position: "absolute",
-              left: "50.4%",
-              top: "42.7%",
+              left: "50.8%",
+              top: "38.9%",
               transform: `translate(-50%,-50%)`,
               zIndex: 100,
             }}
             src="/img/phone.png"
             alt="project"
-            width={254}
-            height={30}
+            width={188}
+            height={26}
           />
         </>
       ) : (
@@ -89,7 +83,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
       )}
       {isVideo ? (
         <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5">
-          <h4 className="mt-[500px] mdm:mt-[600px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+          <h4 className="mt-[50px] mdm:mt-[600px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}
             </span>
