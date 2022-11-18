@@ -1,9 +1,25 @@
+import { useState, FormEvent } from "react";
 import { TbMapPin } from "react-icons/tb";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    window.location.href = `mailto:adi.brisan@yahoo.com?body=Hi, my name is ${name}. 
+     ${message} (${email})`;
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div>
       <section className="text-gray-700 body-font relative">
@@ -16,7 +32,7 @@ const Contact = (props: Props) => {
               Let&apos;s create something great&ensp;!
             </p>
           </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+          <form onSubmit={handleSubmit} className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
               <div className="flex w-[100%] xsm:flex-col">
                 <div className="p-2 w-1/2 xsm:w-[100%]">
@@ -31,6 +47,8 @@ const Contact = (props: Props) => {
                       type="text"
                       id="name"
                       name="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -47,6 +65,8 @@ const Contact = (props: Props) => {
                       type="email"
                       id="email"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -63,6 +83,8 @@ const Contact = (props: Props) => {
                   <textarea
                     id="message"
                     name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -107,7 +129,7 @@ const Contact = (props: Props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </div>
