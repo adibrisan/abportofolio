@@ -104,27 +104,29 @@ const Contact = (props: Props) => {
                   <span className="text-cyan-200">adi.brisan@yahoo.com</span>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                  <div className="flex">
-                    <TbMapPin
-                      className="mt-[20px] mr-[5px]"
-                      color="#66BFBF"
-                      size={20}
-                    />
-                    <p className="leading-normal my-5 text-cyan-100">
-                      Timisoara
-                      <br />
-                      Romania
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <AiOutlinePhone
-                      className="mt-[20px] mr-[5px]"
-                      color="#66BFBF"
-                      size={20}
-                    />
-                    <p className="leading-normal my-5 text-cyan-100">
-                      +40&ensp;770260451
-                    </p>
+                  <div className="smm:flex smm:items-center">
+                    <div className="flex smm:mr-[10px]">
+                      <TbMapPin
+                        className="mt-[20px] mr-[5px]"
+                        color="#66BFBF"
+                        size={20}
+                      />
+                      <p className="leading-normal my-5 text-cyan-100">
+                        Timisoara
+                        <br />
+                        Romania
+                      </p>
+                    </div>
+                    <div className="flex">
+                      <AiOutlinePhone
+                        className="mt-[20px] mr-[5px]"
+                        color="#66BFBF"
+                        size={20}
+                      />
+                      <p className="leading-normal my-5 text-cyan-100">
+                        +40&ensp;770260451
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
