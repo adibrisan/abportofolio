@@ -49,7 +49,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
           />
         </>
       ) : (
-        <div className="relative mr-[200px]">
+        <div className="relative">
           <div
             style={{
               width: "100%",
@@ -76,6 +76,8 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
                 alt="project"
                 width={670}
                 height={15}
+                sizes="(max-width: 368px) 100vw"
+                // layout="responsive"
               />
             </Link>
           </div>
@@ -83,7 +85,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
       )}
       {isVideo ? (
         <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5">
-          <h4 className="mt-[50px] mdm:mt-[600px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+          <h4 className="mt-[50px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}
             </span>
@@ -97,7 +99,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
           </p>
         </div>
       ) : (
-        <div className="px-0 md:px-1 max-w-6xl mr-[200px]">
+        <div className="px-0 md:px-1 max-w-6xl">
           <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}

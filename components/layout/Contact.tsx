@@ -85,12 +85,12 @@ const Contact = (props: Props) => {
                     name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 smm:h-[70px] text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-gray-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button className="flex mx-auto text-white bg-gray-600 border-0 py-2 px-8 smm:py-1 smm:px-5 focus:outline-none hover:bg-indigo-600 rounded text-lg smm:text-sm">
                   Send Email
                 </button>
               </div>
