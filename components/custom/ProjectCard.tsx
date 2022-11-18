@@ -34,19 +34,21 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
             controls
             url="/videos/demo_license.mp4"
           />
-          <Image
-            style={{
-              position: "absolute",
-              left: "50.8%",
-              top: "38.9%",
-              transform: `translate(-50%,-50%)`,
-              zIndex: 100,
-            }}
-            src="/img/phone.png"
-            alt="project"
-            width={188}
-            height={26}
-          />
+          <div className="phone">
+            <Image
+              style={{
+                position: "absolute",
+                left: "50.8%",
+                top: "38.9%",
+                transform: `translate(-50%,-50%)`,
+                zIndex: 100,
+              }}
+              src="/img/phone.png"
+              alt="project"
+              width={188}
+              height={26}
+            />
+          </div>
         </>
       ) : (
         <div className="relative">

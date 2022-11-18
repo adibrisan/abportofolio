@@ -100,6 +100,12 @@
   }
 }
 
+@media screen and (max-height: 670px) {
+  .phone {
+    opacity: 0;
+  }
+}
+
 @layer components {
   .button {
     @apply px-10 py-2 border border-transparent rounded-2xl uppercase text-sm tracking-wide text-white transition-all hover:border-[#66BFBF]/50 hover:text-[#66BFBF]/40 cursor-pointer;
