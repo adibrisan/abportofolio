@@ -33,6 +33,13 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
             muted
             controls
             url="/videos/demo_license.mp4"
+            style={{
+              position: "absolute",
+              left: "50.8%",
+              top: "38.9%",
+              transform: `translate(-50%,-50%)`,
+              zIndex: 100,
+            }}
           />
           <div className="phone">
             <Image
@@ -87,7 +94,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
       )}
       {isVideo ? (
         <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5">
-          <h4 className="mt-[50px] lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm mt-[300px]">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}
             </span>
