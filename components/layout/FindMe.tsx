@@ -71,7 +71,8 @@ const FindMe = (props: Props) => {
         </div>
         <Link href="https://github.com/adibrisan" target="_">
           <h2 className="pt-10 cursor-pointer lg:hidden text-3xl">
-            Find Me on Github
+            Find Me on&ensp;
+            <span className="underline decoration-cyan-200">Github</span>
           </h2>
         </Link>
       </div>

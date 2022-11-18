@@ -1,4 +1,5 @@
 import { TbMapPin } from "react-icons/tb";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 type Props = {};
 
@@ -63,23 +64,46 @@ const Contact = (props: Props) => {
                     id="message"
                     name="message"
                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  ></textarea>
+                  />
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button className="flex mx-auto text-white bg-gray-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                   Send Email
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-cyan-200">adi.brisan@yahoo.com</a>
                 <div className="flex justify-center items-center">
-                  <TbMapPin className="mb-[25px]" color="#66BFBF" size={20} />
-                  <p className="leading-normal my-5 text-cyan-100">
-                    Timisoara
-                    <br />
-                    Romania
-                  </p>
+                  <AiOutlineMail
+                    className="mr-[5px]"
+                    color="#66BFBF"
+                    size={20}
+                  />
+                  <span className="text-cyan-200">adi.brisan@yahoo.com</span>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex">
+                    <TbMapPin
+                      className="mt-[20px] mr-[5px]"
+                      color="#66BFBF"
+                      size={20}
+                    />
+                    <p className="leading-normal my-5 text-cyan-100">
+                      Timisoara
+                      <br />
+                      Romania
+                    </p>
+                  </div>
+                  <div className="flex">
+                    <AiOutlinePhone
+                      className="mt-[20px] mr-[5px]"
+                      color="#66BFBF"
+                      size={20}
+                    />
+                    <p className="leading-normal my-5 text-cyan-100">
+                      +40&ensp;770260451
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
