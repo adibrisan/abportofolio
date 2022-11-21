@@ -101,6 +101,15 @@
 }
 
 @media screen and (max-height: 670px) {
+  .expCardPhone {
+    margin-top: 80px;
+  }
+
+  .projectCardPhone {
+    position: absolute;
+    top: 270px;
+  }
+
   .phone {
     opacity: 0;
   }

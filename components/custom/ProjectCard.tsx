@@ -27,20 +27,22 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
     >
       {isVideo ? (
         <>
-          <ReactPlayer
-            loop
-            playing
-            muted
-            controls
-            url="/videos/demo_license.mp4"
-            style={{
-              position: "absolute",
-              left: "50.8%",
-              top: "38.9%",
-              transform: `translate(-50%,-50%)`,
-              zIndex: 100,
-            }}
-          />
+          <div className="projectCardPhone">
+            <ReactPlayer
+              loop
+              playing
+              muted
+              controls
+              url="/videos/demo_license.mp4"
+              style={{
+                position: "absolute",
+                left: "50.8%",
+                top: "38.9%",
+                transform: `translate(-50%,-50%)`,
+                zIndex: 90,
+              }}
+            />
+          </div>
           <div className="phone">
             <Image
               style={{
@@ -86,15 +88,14 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
                 width={670}
                 height={15}
                 sizes="(max-width: 368px) 100vw"
-                // layout="responsive"
               />
             </Link>
           </div>
         </div>
       )}
       {isVideo ? (
-        <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5">
-          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm mt-[300px]">
+        <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5 smm:pt-9">
+          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm mt-[300px] smm:text-[10px]">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}
             </span>
@@ -109,7 +110,7 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
         </div>
       ) : (
         <div className="px-0 md:px-1 max-w-6xl">
-          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm">
+          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm smm:text-[10px]">
             <span className="underline decoration-cyan-200/70">
               Project {index + 1}
             </span>
