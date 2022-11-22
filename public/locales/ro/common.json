@@ -21,5 +21,8 @@
   "summary": "descriere",
   "little": "mică",
   "description1": "În prezent sunt frontend developer la ",
-  "description2": ", construind aplicații web. Principalele instrumente cu care lucrez sunt React și React Native (atunci când este nevoie pentru aplicații mobile). Recent am încercat să dezvolt și aplicații full stack (MERN Stack) ).În 2022, am absolvit Facultatea de Automatică și Calculatoare din cadrul Universității Politehnica din Timișoara cu o diplomă de Licență în Inginerie."
+  "description2": ", construind aplicații web. Principalele instrumente cu care lucrez sunt React și React Native (atunci când este nevoie pentru aplicații mobile). Recent am încercat să dezvolt și aplicații full stack (MERN Stack) ).În 2022, am absolvit Facultatea de Automatică și Calculatoare din cadrul Universității Politehnica din Timișoara cu o diplomă de Licență în Inginerie.",
+  "projectTitle": "Proiectul",
+  "projectDescription1": "Aplicație de urmărire a cheltuielilor cu funcționalitate AI care transformă fotografiile făcute pe bonurile fiscale în cheltuieli în aplicație. (dezvoltat cu un API OCR) Mai mult decât atât, puteți vedea cheltuielile pe baza lunii, zilei selectate și puteți exporta aceste date în format pdf. Aveți grafice care descriu cât cheltuiți în comparație cu ultima lună. Un ecran cu un curs de schimb al mai multor valute și un alt ecran cu profilul tău. Această aplicație a fost dezvoltată în React Native și Real Time DB Firebase.",
+  "projectDescription2": "Aplicație pentru o pizzerie. Un site web dezvoltat cu React, NextJS și mongoDB."
 }

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { useTranslation } from "next-i18next";
 
 import Link from "../core/Link";
 
@@ -13,6 +14,8 @@ interface Props {
 }
 
 const ProjectCard = ({ index, isVideo, link }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{
@@ -97,30 +100,24 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
         <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5 smm:pt-9">
           <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm mt-[300px] smm:text-[10px]">
             <span className="underline decoration-cyan-200/70">
-              Project {index + 1}
+              {t("common:projectTitle")} {index + 1}
             </span>
             :&ensp;React Native app - Econominator
           </h4>
           <p className="text-sm xl:text-lg text-center smm:hidden">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-            excepturi explicabo consectetur eaque consequuntur amet minus
-            corrupti quibusdam, et deserunt quia quasi suscipit, laudantium
-            alias illo! Hic reprehenderit fuga quas!
+            {t("common:projectDescription1")}
           </p>
         </div>
       ) : (
         <div className="px-0 md:px-1 max-w-6xl">
           <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm smm:text-[10px]">
             <span className="underline decoration-cyan-200/70">
-              Project {index + 1}
+              {t("common:projectTitle")} {index + 1}
             </span>
             :&ensp;React Native app - Econominator
           </h4>
           <p className="text-sm xl:text-lg text-center smm:hidden">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-            excepturi explicabo consectetur eaque consequuntur amet minus
-            corrupti quibusdam, et deserunt quia quasi suscipit, laudantium
-            alias illo! Hic reprehenderit fuga quas!
+            {t("common:projectDescription2")}
           </p>
         </div>
       )}
