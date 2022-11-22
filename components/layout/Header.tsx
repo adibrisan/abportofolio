@@ -8,10 +8,13 @@ import { VscFilePdf } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
 import useDownloader from "react-use-downloader";
+import { useTranslation } from "next-i18next";
 
 type Props = {};
 
 const Header = ({}: Props) => {
+  const { t } = useTranslation();
+
   const { download } = useDownloader();
 
   const fileUrl = "/cv/Adrian-Alexandru_Brisan_Resume.pdf";
@@ -89,7 +92,7 @@ const Header = ({}: Props) => {
       >
         <VscFilePdf color="gray" size={30} />
         <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
-          Download my CV
+          {t("common:cv")}
         </p>
         <span className="mt-1 uppercase text-sm text-gray-400 md:hidden">
           CV

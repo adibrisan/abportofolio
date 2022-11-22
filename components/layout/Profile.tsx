@@ -1,18 +1,17 @@
 import Image from "next/image";
 import Link from "../core/Link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { useTranslation } from "next-i18next";
 
 import ProfileComponent from "../custom/ProfileComponent";
 
 type Props = {};
 
 const Profile = (props: Props) => {
+  const { t } = useTranslation();
+
   const [title] = useTypewriter({
-    words: [
-      "Hi, my name is Adi Brisan",
-      "<Guy-who-loves-Cars />",
-      "<ButLikesToCodeMore />",
-    ],
+    words: [`${t("common:hi")}`, `${t("common:guy")}`, `${t("common:code")}`],
     loop: true,
     delaySpeed: 4000,
   });
@@ -38,22 +37,22 @@ const Profile = (props: Props) => {
         </h1>
         <div className="pt-10">
           <Link href="#about">
-            <button className="button">About</button>
+            <button className="button">{t("common:aboutTitle")}</button>
           </Link>
           <Link href="#experience">
-            <button className="button">Experience</button>
+            <button className="button">{t("common:experience")}</button>
           </Link>
           <Link href="#skills">
-            <button className="button">Skills</button>
+            <button className="button">{t("common:skills")}</button>
           </Link>
           <Link href="#projects">
-            <button className="button">Projects</button>
+            <button className="button">{t("common:projects")}</button>
           </Link>
           <Link href="#findme">
-            <button className="button">Github projects</button>
+            <button className="button">{t("common:githubProjects")}</button>
           </Link>
           <Link href="#contact">
-            <button className="button">Contact me</button>
+            <button className="button">{t("common:contactMe")}</button>
           </Link>
         </div>
       </div>

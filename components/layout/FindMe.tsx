@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "../core/Link";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 type Props = {};
 
 const FindMe = (props: Props) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const boxContainer = document.querySelector(".boxContainer");
 
@@ -43,10 +46,10 @@ const FindMe = (props: Props) => {
       className="relative px-10 smm:p-2 max-w-7xl h-screen flex flex-col justify-evenly items-center text-center md:text-left md:flex-row mx-auto"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] smm:tracking-[1px] text-sm sm:text-2xl text-cyan-200">
-        Find me on github
+        {t("common:findMe")}
       </h3>
       <div className="githubContainer">
-        <h1 className="githubTitle">Want to see all projects?</h1>
+        <h1 className="githubTitle">{t("common:seeAll")}</h1>
         <div className="githubChart">
           <div className="dates">
             <span>Jan</span>

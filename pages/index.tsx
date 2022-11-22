@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import About from "../components/layout/About";
 import Contact from "../components/layout/Contact";
@@ -10,7 +11,19 @@ import Skills from "../components/layout/Skills";
 import Profile from "../components/layout/Profile";
 import Projects from "../components/layout/Projects";
 
-export default function Home() {
+interface Props {
+  locale: string;
+}
+
+export async function getStaticProps({ locale }: Props) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
+
+export default function Home(props: Props) {
   return (
     <div className="bg-gray-800 h-screen text-white snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0">
       <Head>

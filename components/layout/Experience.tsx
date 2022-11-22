@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 import ExpCard from "../custom/ExpCard";
 
@@ -7,6 +8,8 @@ import { softSrc, endavaSrc, summarySoft, summaryEndava } from "../../consts";
 type Props = {};
 
 const Experience = (props: Props) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,7 +18,7 @@ const Experience = (props: Props) => {
       className="relative px-10 h-screen flex flex-col justify-evenly items-center text-left md:flex-row max-w-full mx-auto overflow-hidden"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] smm:tracking-[1px] text-sm md:text-2xl text-cyan-200">
-        Experience
+        {t("common:experience")}
       </h3>
       <div className="w-full p-10 flex space-x-5 overflow-x-scroll snap-x snap-mandatory">
         <ExpCard

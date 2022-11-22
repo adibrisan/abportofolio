@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 
 import ProjectCard from "../custom/ProjectCard";
 
 type Props = {};
 
 const Projects = (props: Props) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,7 +16,7 @@ const Projects = (props: Props) => {
       className="relative h-screen flex flex-col text-left md:flex-row w-full justify-evenly mx-auto items-center overflow-hidden z-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-cyan-200 text-2xl smm:tracking-[1px] smm:text-xs smm:top-12 mdm:top-8">
-        Projects
+        {t("common:projects")}
       </h3>
 
       <div className="relative w-full h-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">

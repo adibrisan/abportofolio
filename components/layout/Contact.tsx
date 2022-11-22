@@ -1,10 +1,13 @@
 import { useState, FormEvent } from "react";
 import { TbMapPin } from "react-icons/tb";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { useTranslation } from "next-i18next";
 
 type Props = {};
 
 const Contact = (props: Props) => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -26,10 +29,10 @@ const Contact = (props: Props) => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="lg:text-3xl text-md font-medium title-font mb-4 text-cyan-200">
-              Contact Me
+              {t("common:contactMe")}
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-sm text-cyan-200">
-              Let&apos;s create something great&ensp;!
+              {t("common:contactMeSubtitle")}
             </p>
           </div>
           <form onSubmit={handleSubmit} className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -41,7 +44,7 @@ const Contact = (props: Props) => {
                       htmlFor="name"
                       className="leading-7 text-sm smm:text-xs text-cyan-200"
                     >
-                      Name
+                      {t("common:name")}
                     </label>
                     <input
                       type="text"
@@ -59,7 +62,7 @@ const Contact = (props: Props) => {
                       htmlFor="email"
                       className="leading-7 text-sm smm:text-xs text-cyan-200"
                     >
-                      Email
+                      {t("common:email")}
                     </label>
                     <input
                       type="email"
@@ -78,7 +81,7 @@ const Contact = (props: Props) => {
                     htmlFor="message"
                     className="leading-7 text-sm smm:text-xs text-cyan-200"
                   >
-                    Message
+                    {t("common:message")}
                   </label>
                   <textarea
                     id="message"
@@ -91,7 +94,7 @@ const Contact = (props: Props) => {
               </div>
               <div className="p-2 w-full">
                 <button className="flex mx-auto text-white bg-gray-600 border-0 py-2 px-8 smm:py-1 smm:px-5 focus:outline-none hover:bg-indigo-600 rounded text-lg smm:text-sm">
-                  Send Email
+                  {t("common:send")}
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
