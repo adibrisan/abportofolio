@@ -100,15 +100,16 @@
   }
 }
 
-@media screen and (max-height: 670px) {
-  .expCardPhone {
-    top: 30px;
-  }
-
+@media screen and (min-height: 450) {
   .expTitlePhone {
-    bottom: 100px;
+    top: 10px;
   }
+  .expCardPhone {
+    top: 10px;
+  }
+}
 
+@media screen and (max-height: 670px) {
   .projectCardPhone {
     position: absolute;
     top: 270px;

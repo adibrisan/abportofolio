@@ -15,7 +15,7 @@ const Projects = (props: Props) => {
       transition={{ duration: 1 }}
       className="relative h-screen flex flex-col text-left md:flex-row w-full justify-evenly mx-auto items-center overflow-hidden z-0"
     >
-      <h3 className="expCardPhone absolute top-24 uppercase tracking-[20px] text-cyan-200 text-2xl smm:tracking-[1px] smm:text-xs smm:top-12 mdm:top-8">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-cyan-200 text-2xl smm:tracking-[1px] smm:text-xs smm:top-12 sm:top-8">
         {t("common:projects")}
       </h3>
 
