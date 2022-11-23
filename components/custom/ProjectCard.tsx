@@ -98,13 +98,13 @@ const ProjectCard = ({ index, isVideo, link }: Props) => {
       )}
       {isVideo ? (
         <div className="space-y-0 px-0 md:px-1 max-w-6xl lg:space-y-5 smm:pt-9">
-          <h4 className="lg:text-2xl text-md font-semibold text-center mdm:text-sm mt-[300px] smm:text-[10px]">
+          <h4 className="lg:text-2xl text-md font-semibold text-center xlm:text-[10px] mdm:mt-[350px] mt-[320px]">
             <span className="underline decoration-cyan-200/70">
               {t("common:projectTitle")} {index + 1}
             </span>
             :&ensp;React Native app - Econominator
           </h4>
-          <p className="text-sm xl:text-lg text-center smm:hidden">
+          <p className="text-sm xl:text-lg text-center smm:hidden xlm:text-[10px]">
             {t("common:projectDescription1")}
           </p>
         </div>

@@ -102,7 +102,11 @@
 
 @media screen and (max-height: 670px) {
   .expCardPhone {
-    margin-top: 80px;
+    top: 30px;
+  }
+
+  .expTitlePhone {
+    bottom: 100px;
   }
 
   .projectCardPhone {
