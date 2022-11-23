@@ -23,14 +23,6 @@ const Header = ({}: Props) => {
     typeSpeed: 100,
   });
 
-  const scrollUp = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    console.log("scrolled up");
-  };
-
   return (
     <header className="flex items-start justify-between sticky p-5 top-0 max-w-7xl mx-auto xl:items-center z-30">
       <motion.div
@@ -47,10 +39,7 @@ const Header = ({}: Props) => {
         transition={{ duration: 1 }}
         className="flex flex-row items-center content-center"
       >
-        <span
-          className="absolute -left-60 text-xl cursor-pointer hidden xl:inline-flex"
-          onClick={scrollUp}
-        >
+        <span className="absolute -left-60 text-xl cursor-pointer hidden xl:inline-flex">
           {title}
         </span>
         <Link
