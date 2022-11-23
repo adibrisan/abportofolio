@@ -1,14 +1,10 @@
 import Link from "next/link";
-import {
-  TiSocialFacebook,
-  TiSocialLinkedin,
-  TiSocialGithub,
-} from "react-icons/ti";
 import { VscFilePdf } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
 import useDownloader from "react-use-downloader";
 import { useTranslation } from "next-i18next";
+import { Facebook, Linkedin, GitHub } from "react-feather";
 
 type Props = {};
 
@@ -62,17 +58,17 @@ const Header = ({}: Props) => {
           href="https://www.facebook.com/adi.brisan.9"
           target="_"
         >
-          <TiSocialFacebook cursor="pointer" color="gray" size={30} />
+          <Facebook className="hover:stroke-white" color="gray" size={23} />
         </Link>
         <Link
           className="pr-5"
           href="https://www.linkedin.com/in/adi-bri%C8%99an-96b8801a9/"
           target="_"
         >
-          <TiSocialLinkedin cursor="pointer" color="gray" size={30} />
+          <Linkedin className="hover:stroke-white" color="gray" size={23} />
         </Link>
         <Link href="https://github.com/adibrisan" target="_">
-          <TiSocialGithub cursor="pointer" color="gray" size={30} />
+          <GitHub className="hover:stroke-white" color="gray" size={23} />
         </Link>
       </motion.div>
       <motion.div
@@ -87,7 +83,7 @@ const Header = ({}: Props) => {
           scale: 1,
         }}
         transition={{ duration: 1 }}
-        className="flex items-center text-gray-300 cursor-pointer mdm:flex-col"
+        className="flex items-center text-gray-300 cursor-pointer mdm:flex-col hover:underline decoration-cyan-200"
         onClick={() => download(fileUrl, fileName)}
       >
         <VscFilePdf color="gray" size={30} />

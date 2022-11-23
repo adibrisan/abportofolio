@@ -97,8 +97,8 @@ const Contact = (props: Props) => {
                   {t("common:send")}
                 </button>
               </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <div className="flex justify-center items-center">
+              <div className="flex smm:flex-col smm:items-center justify-center p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <div className="flex justify-center items-center mr-[200px] smm:mr-0">
                   <AiOutlineMail
                     className="mr-[5px]"
                     color="#66BFBF"
