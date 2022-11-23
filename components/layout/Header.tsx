@@ -2,7 +2,6 @@ import Link from "next/link";
 import { VscFilePdf } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { useTypewriter } from "react-simple-typewriter";
-import useDownloader from "react-use-downloader";
 import { useTranslation } from "next-i18next";
 import { Facebook, Linkedin, GitHub } from "react-feather";
 
@@ -11,10 +10,7 @@ type Props = {};
 const Header = ({}: Props) => {
   const { t } = useTranslation();
 
-  const { download } = useDownloader();
-
   const fileUrl = "/cv/Adrian-Alexandru_Brisan_Resume.pdf";
-  const fileName = "Adrian-Alexandru_Brisan_Resume.pdf";
 
   const [title] = useTypewriter({
     words: ["<adibrisan />"],
@@ -60,29 +56,30 @@ const Header = ({}: Props) => {
           <GitHub className="hover:stroke-white" color="gray" size={23} />
         </Link>
       </motion.div>
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{ duration: 1 }}
-        className="flex items-center text-gray-300 cursor-pointer mdm:flex-col hover:underline decoration-cyan-200"
-        onClick={() => download(fileUrl, fileName)}
-      >
-        <VscFilePdf color="gray" size={30} />
-        <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
-          {t("common:cv")}
-        </p>
-        <span className="mt-1 uppercase text-sm text-gray-400 md:hidden">
-          CV
-        </span>
-      </motion.div>
+      <Link href={fileUrl} target="_" rel="noopener noreferrer">
+        <motion.div
+          initial={{
+            x: 500,
+            opacity: 0,
+            scale: 0.5,
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{ duration: 1 }}
+          className="flex items-center text-gray-300 cursor-pointer mdm:flex-col hover:underline decoration-cyan-200"
+        >
+          <VscFilePdf color="gray" size={30} />
+          <p className="ml-2 uppercase hidden md:inline-flex text-sm text-gray-400">
+            {t("common:cv")}
+          </p>
+          <span className="mt-1 uppercase text-sm text-gray-400 md:hidden">
+            CV
+          </span>
+        </motion.div>
+      </Link>
     </header>
   );
 };
