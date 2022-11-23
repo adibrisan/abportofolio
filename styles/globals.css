@@ -100,9 +100,9 @@
   }
 }
 
-@media screen and (min-height: 450) {
+@media screen and (max-height: 624px) {
   .expTitlePhone {
-    top: 10px;
+    top: 50px;
   }
   .expCardPhone {
     top: 10px;
