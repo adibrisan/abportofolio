@@ -43,7 +43,9 @@ const About = (props: Props) => {
         </h4>
         <p className="text-md smm:text-xs">
           {t("common:description1")}
-          <span className="underline decoration-[#66BFBF]">@Endava</span>
+          <span className="underline decoration-[#66BFBF]">
+            @Cognizant Mobility
+          </span>
           {t("common:description2")}
         </p>
       </div>
