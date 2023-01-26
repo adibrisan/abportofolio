@@ -35,7 +35,7 @@ const Header = ({}: Props) => {
         transition={{ duration: 1 }}
         className="flex flex-row items-center content-center"
       >
-        <span className="absolute -left-60 text-xl cursor-pointer hidden xl:inline-flex">
+        <span className="absolute -left-60 text-xl hidden 3xl:inline-flex">
           {title}
         </span>
         <Link
