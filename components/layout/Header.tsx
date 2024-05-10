@@ -10,7 +10,7 @@ type Props = {};
 const Header = ({}: Props) => {
   const { t } = useTranslation();
 
-  const fileUrl = "/cv/Adrian-Alexandru_Brisan_Resume.pdf";
+  const fileUrl = "/cv/Alexandru-Adrian-Brisan-Resume.pdf";
 
   const [title] = useTypewriter({
     words: ["<adibrisan />"],
