@@ -29,7 +29,7 @@ const Profile = (props: Props) => {
       />
       <div className="z-20">
         <h2 className="text-sm xl:text-lg tracking-[18px] smm:tracking-[1px] text-cyan-200 uppercase pb-5">
-          Frontend Engineer
+          Full stack Engineer
         </h2>
         <h1 className="text-lg lg:text-4xl font-semibold">
           <span className="smm:text-xs">{title}</span>

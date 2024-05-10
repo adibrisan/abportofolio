@@ -20,7 +20,7 @@
   "summary_title": "Here is a",
   "summary": "summary",
   "little": "little",
-  "description1": "I'm currently a frontend developer ",
+  "description1": "I'm currently a full stack developer ",
   "description2": ", building tools for the web.The main tools I work with are React and React Native (when needed for mobile apps).Recently I tried to develop full stack applications as well (the MERN Stack).In 2022, I graduated from the Faculty of Automation and Computers at the Polytechnic University of Timisoara with a Bachelor's degree in Engineering.",
   "projectTitle": "Project",
   "projectDescription1": "Expense tracker app with AI functionality which turns photos taken on tax receipts in app expenses.(developed with an OCR API) More than that , you can see your expenses based on the selected month, day and export this data as pdf. You have charts that describe how much you spend in comparison to the last month. A screen with an exchange rate of several currencies and another screen with your profile. This app was developed in React Native and Real Time DB Firebase.",
