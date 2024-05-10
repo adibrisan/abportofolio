@@ -27,7 +27,7 @@ export default function Home(props: Props) {
   return (
     <div className="bg-gray-800 h-screen text-white snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0">
       <Head>
-        <title>Adrian Brisan</title>
+        <title>Adrian Brisan | Full stack Dev</title>
         <meta
           name="description"
           content="Full Stack developer working mainly with React / React Native / nodeJS / graphqlQL / mongoDB / mySQL"
