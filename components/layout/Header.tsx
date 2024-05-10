@@ -13,7 +13,7 @@ const Header = ({}: Props) => {
   const fileUrl = "/cv/Alexandru-Adrian-Brisan-Resume.pdf";
 
   const [title] = useTypewriter({
-    words: ["<adibrisan />"],
+    words: ["<adrianBrisan />"],
     loop: true,
     delaySpeed: 5000,
     typeSpeed: 100,
@@ -47,7 +47,7 @@ const Header = ({}: Props) => {
         </Link>
         <Link
           className="pr-5"
-          href="https://www.linkedin.com/in/adi-bri%C8%99an-96b8801a9/"
+          href="https://www.linkedin.com/in/adrian-brisan-96b8801a9/"
           target="_"
         >
           <Linkedin className="hover:stroke-white" color="gray" size={23} />
