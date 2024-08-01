@@ -107,7 +107,7 @@ const Contact = (props: Props) => {
                   <span className="text-cyan-200">
                     <a
                       target="_blank"
-                      rel="nofollow"
+                      rel="noreferrer"
                       href="mailto:adrianbrisan.dev@gmail.com"
                     >
                       adrianbrisan.dev@gmail.com
