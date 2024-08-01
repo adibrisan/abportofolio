@@ -105,13 +105,7 @@ const Contact = (props: Props) => {
                     size={20}
                   />
                   <span className="text-cyan-200">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="mailto:adrianbrisan.dev@gmail.com"
-                    >
-                      adrianbrisan.dev@gmail.com
-                    </a>
+                    adrianbrisan.dev@gmail.com
                   </span>
                 </div>
                 <div className="flex flex-col justify-center items-center">
@@ -135,13 +129,7 @@ const Contact = (props: Props) => {
                         size={20}
                       />
                       <p className="leading-normal my-5 text-cyan-100">
-                        <a
-                          target="_blank"
-                          rel="nofollow"
-                          href="tel: +40770260451"
-                        >
-                          +40&ensp;770&ensp;260&ensp;451
-                        </a>
+                        +40&ensp;770&ensp;260&ensp;451
                       </p>
                     </div>
                   </div>
