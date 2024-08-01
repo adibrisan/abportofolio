@@ -105,7 +105,13 @@ const Contact = (props: Props) => {
                     size={20}
                   />
                   <span className="text-cyan-200">
-                    adrianbrisan.dev@gmail.com
+                    <a
+                      target="_blank"
+                      rel="nofollow"
+                      href="mailto:adrianbrisan.dev@gmail.com"
+                    >
+                      adrianbrisan.dev@gmail.com
+                    </a>
                   </span>
                 </div>
                 <div className="flex flex-col justify-center items-center">
