@@ -135,7 +135,13 @@ const Contact = (props: Props) => {
                         size={20}
                       />
                       <p className="leading-normal my-5 text-cyan-100">
-                        +40&ensp;770&ensp;260&ensp;451
+                        <a
+                          target="_blank"
+                          rel="nofollow"
+                          href="tel: +40770260451"
+                        >
+                          +40&ensp;770&ensp;260&ensp;451
+                        </a>
                       </p>
                     </div>
                   </div>
