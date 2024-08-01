@@ -15,7 +15,7 @@ const Contact = (props: Props) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    window.location.href = `mailto:adi.brisan@yahoo.com?body=Hi, my name is ${name}. 
+    window.location.href = `mailto:adrianbrisan.dev@gmail.com?body=Hi, my name is ${name}. 
      ${message} (${email})`;
 
     setName("");
@@ -104,7 +104,9 @@ const Contact = (props: Props) => {
                     color="#66BFBF"
                     size={20}
                   />
-                  <span className="text-cyan-200">adi.brisan@yahoo.com</span>
+                  <span className="text-cyan-200">
+                    adrianbrisan.dev@gmail.com
+                  </span>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                   <div className="smm:flex smm:items-center">
@@ -127,7 +129,7 @@ const Contact = (props: Props) => {
                         size={20}
                       />
                       <p className="leading-normal my-5 text-cyan-100">
-                        +40&ensp;770260451
+                        +40&ensp;770&ensp;260&ensp;451
                       </p>
                     </div>
                   </div>
