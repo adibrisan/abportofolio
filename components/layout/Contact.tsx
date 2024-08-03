@@ -2,6 +2,7 @@ import { useState, FormEvent } from "react";
 import { TbMapPin } from "react-icons/tb";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { useTranslation } from "next-i18next";
+import Link from "../core/Link";
 
 type Props = {};
 
@@ -105,7 +106,9 @@ const Contact = (props: Props) => {
                     size={20}
                   />
                   <span className="text-cyan-200">
-                    adrianbrisan.dev@gmail.com
+                    <Link href="mailto: adrianbrisan.dev@gmail.com" target="_">
+                      adrianbrisan.dev@gmail.com
+                    </Link>
                   </span>
                 </div>
                 <div className="flex flex-col justify-center items-center">
@@ -129,7 +132,9 @@ const Contact = (props: Props) => {
                         size={20}
                       />
                       <p className="leading-normal my-5 text-cyan-100">
-                        +40&ensp;770&ensp;260&ensp;451
+                        <Link href="tel: +40770260451" target="_">
+                          +40&ensp;770&ensp;260&ensp;451
+                        </Link>
                       </p>
                     </div>
                   </div>
