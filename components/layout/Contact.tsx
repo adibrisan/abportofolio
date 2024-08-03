@@ -113,9 +113,9 @@ const Contact = (props: Props) => {
                 </div>
                 <div className="flex flex-col justify-center items-center">
                   <div className="smm:flex smm:items-center">
-                    <div className="flex smm:mr-[10px]">
+                    <div className="flex items-center justify-center smm:mr-[10px]">
                       <TbMapPin
-                        className="mt-[20px] mr-[5px]"
+                        className="mr-[5px]"
                         color="#66BFBF"
                         size={20}
                       />
@@ -125,9 +125,9 @@ const Contact = (props: Props) => {
                         Romania
                       </p>
                     </div>
-                    <div className="flex">
+                    <div className="flex items-center justify-center">
                       <AiOutlinePhone
-                        className="mt-[20px] mr-[5px]"
+                        className="mr-[5px]"
                         color="#66BFBF"
                         size={20}
                       />
