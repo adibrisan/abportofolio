@@ -42,9 +42,9 @@ const About = (props: Props) => {
           &thinsp;{t("common:summary")}
         </h4>
         <p className="text-md smm:text-xs">
-          {t("common:description1")}@
+          {t("common:description1")}
           <span className="underline decoration-[#66BFBF]">
-            Cognizant Mobility
+            working fully remote
           </span>
           &thinsp;
           {t("common:description2")}
