@@ -6,7 +6,6 @@ import { useTranslation } from "next-i18next";
 import { Facebook, Linkedin, GitHub } from "react-feather";
 
 type Props = {};
-
 const Header = ({}: Props) => {
   const { t } = useTranslation();
 
